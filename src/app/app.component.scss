@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap');
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Lexend Exa', sans-serif;
+}
+#header {
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    position: absolute;
+    padding-top: 1rem; 
+    
+    #logoimg{
+
+        position: fixed;
+        z-index: 5;
+    
+    }
+
+    ul{
+        display: flex;
+        
+        width: 60vw;
+        padding-left: 3rem;
+        justify-content: flex-end;
+        MARGIN-LEFT: 30%;
+        MARGIN-TOP: 1%;
+    
+        a:nth-child(3) li {
+
+        padding-right: 1.5rem; 
+    }
+        li {
+            padding: 1rem;
+
+             
+    list-style-type: none;
+    font-weight: 200;
+
+        }
+
+        
+        
+        a {
+            text-decoration-line: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        a:hover {
+
+            background-color: white;
+            
+        
+                }
+
+        a:hover li {
+
+            color: black;
+        }
+        
+
+    }
+
+}
