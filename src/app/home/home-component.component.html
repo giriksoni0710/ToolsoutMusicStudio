@@ -23,7 +23,7 @@
 </div>
 </div>
 
-<div class="aboutSection">
+<div class="aboutSection" id="aboutSection">
 
 <div class="quote">
 <span id="quote">
@@ -48,7 +48,7 @@
 
 </div>    
 
-<div class="contactSection">
+<div class="contactSection" id="contactSection">
 
         <div class="container">
           <div style="text-align:center">
@@ -61,17 +61,18 @@
             </div>
             <div class="column">
               <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <br>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="lname">Name</label><br>
+                <input type="text" id="lname" name="lastname" placeholder="Your name here..">
                 <br>
+                <div class="labeldiv">
                 <label for="email">Email</label>
-                <br>
+                 </div>
+                
                 <input type="text" id="email" placeholder="Your email address">
+                <br>
                 <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Let us know how can we help you in your musical journey.." style="height:170px"></textarea>
                 <input type="submit" value="Submit" class="skillsbtn">
               </form>
             </div>
