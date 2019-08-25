@@ -33,12 +33,13 @@ ul {
 
 ul li {
     flex-basis: 26%;
+    font-weight: bolder;
 }
  
 
 ul li a {
     text-decoration-line: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #btn1 {
@@ -100,14 +101,13 @@ max-width: 312px;
   #bannertxt {
       z-index: 6;
     position: absolute;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 85%;
+    width: 91.3%;
     margin-top: -28rem;
     text-align: center;
     padding: 1rem;
     background-color: rgba(0,0,0,0.8);
-    
+
+  
 
     h4{
         color: white;
@@ -123,31 +123,102 @@ max-width: 312px;
 
         padding: 1rem;
     
+        h2 {
+          text-align: center;
+          
+        }
         .quote {
 
             background-color: antiquewhite;
             padding: 1rem;
+            position: absolute;
+            margin-top: 2rem;
+            z-index: 5;
+            margin-right: 1rem;
 
+            
+              h2 {
+                margin-top: 13rem;
+                font-size: 3rem;
+              }
+            
+            
         }
 
         .description {
 
             background-color: antiquewhite;
             padding: 1rem;
-            margin-top: 1rem;
+            margin-top: 3rem;
+            position: absolute;
+            z-index: 6;
+            margin-right: 1rem;
+
+            h5 {
+              padding: 2rem;
+              font-size: 1rem;
+    font-style: oblique;
+            }
 
         }
 
         #aboutimg1 {
 
-            margin-top: 1rem;
+            margin-top: 3rem;
+            text-align: center;
             img {
-                width: 100%;
-            }
+                
+                min-width: 200px;
+                min-height: 200px;
+
+
+              }
+            
         }
 
     
     }
+    @media Screen and (min-width: 700px){
+    
+      #aboutimg1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 60%;
+        text-align: center;
+       
+        grid-gap: 0.3rem;
+      margin-left: 2.5rem;
+
+      img{
+        width: 300px;
+        height: 300px;
+      }
+  
+
+      
+  
+      }}
+  
+
+    @media Screen and (min-width: 1000px){
+    
+    #aboutimg1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 60%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      grid-gap: 0.3rem;
+  
+
+    }
+  
+    img{
+      width: 400px;
+      height: 400px;
+    }
+  }
 
     //************** contact section*******************//
     
@@ -156,6 +227,7 @@ max-width: 312px;
 
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-top: 38rem;
 
     }
 
@@ -239,18 +311,57 @@ max-width: 312px;
       }
       
 
+      .ourstudio {
+        
+          margin-top: 13rem;
+          font-size: 3rem;
+        
+      }
+     
+      @media only screen and  (min-width: 700px) {
 
-      @media screen and  (min-width: 900) {
+        .contactSection {
 
-        #bannertxt {
-
-            height: 140px;
+          margin-top: 22rem;
 
         }
     
+        
+        #bannertxt {
+
+          width: 95.3%;
+
+        }
       }
 
-      
+
+      @media only screen and  (min-width: 900px) {
+
+        #bannertxt {
+
+            width: 96.5%;
+
+        }
+        
+        .contactSection {
+
+          margin-top: 19rem;
+
+        }
+
+      }
+
+      @media only screen and  (min-width: 1200px) {
+
+        #bannertxt {
+
+            width: 97.8%;
+
+        }
+
+       
+      }
+ 
     .aboutSection img:hover {
         animation: shake 0.5s;
         animation-iteration-count: 2;
