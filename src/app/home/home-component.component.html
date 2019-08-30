@@ -16,15 +16,20 @@
 
 <div id="btndiv">
  
-        <button id="skillsbtn">Book a Free Session</button>
+        <button id="skillsbtn" routerLink="/bookservice">Book a Free Session</button>
        
         <button id="skillsbtn" routerLink="/courses"> Courses </button>
     
     </div>
 </div>
 </div>
+<br><br>
+<span class="playerHeading" style="text-align: center;"> <h2>Tracks produced at Toolsout </h2></span>
+<mat-advanced-audio-player [playlist]="msaapPlaylist" [displayTitle]="msaapDisplayTitle" 
+            [displayPlaylist]="msaapDisplayPlayList" [pageSizeOptions]="msaapPageSizeOptions" 
+                [expanded]="true" [displayVolumeControls]="true"></mat-advanced-audio-player>  
 
-<div class="aboutSection" id="aboutSection">
+    <div class="aboutSection" id="aboutSection">
 
 <div class="quote">
 <span id="quote">
@@ -33,20 +38,25 @@
 
 </div>
 <br>
-<h2 class="ourstudio">OUR STUDIO</h2>
+<h2 class="ourstudio">Our Studio</h2>
 <br>
 <div id="aboutimg1">
 
+  
+  <img src="../assets/img/studio3.jpg" alt="">
+  <img src="../assets/img/studio4.jpg" alt="">
+  <img src="../assets/img/studio5.jpg" alt="">
+  <img src="../assets/img/studio2.jpg" alt="">
+    <img src="../assets/img/studio6.jpg" alt="">
     <img src="../assets/img/virus_bg.jpg" alt="">
     <img src="../assets/img/wimpymusic6s2_mk2_00063_l.jpg" alt="">
     <img src="../assets/img/TR8_640.jpg" alt="">
     <img src="../assets/img/TKX1_MK2_img01_L.jpg" alt="">
     <img src="../assets/img/maxresdefault (1).jpg" alt="">
     <img src="../assets/img/img-ce-background-traktor_kontrol_s4_overview_04_4channelmixer_2x-eac9a664d4ba4f45a3704a1e571d3b84-d.jpg" alt="">
-
-
+    <img src="../assets/img/studio1.jpg" alt="">
+    
 </div>
-
 <div class="description">
 
 <h5>
@@ -57,7 +67,7 @@
 
 </div>    
 
-<div class="contactSection" id="contactSection">
+<!-- <div class="contactSection" id="contactSection">
 
         <div class="container">
           <div style="text-align:center">
@@ -88,4 +98,4 @@
           </div>
         </div>
         
-</div>
+</div> -->

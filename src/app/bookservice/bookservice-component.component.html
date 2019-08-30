@@ -5,18 +5,16 @@
    
 
 <div class="form-group">
-    <h2 class="heading">Book an appointment with us!!!</h2>
+    <h2 class="heading">Book a Free Session with us!!!</h2>
     <div class="controls">
-      <input type="text" id="name" class="floatLabel" name="name">
-      <label for="name">Name</label>
+      <input type="text" class="floatLabel" name="name" placeholder="Name..." #name>
     </div>
     <div class="controls">
-      <input type="text" id="email" class="floatLabel" name="email">
-      <label for="email">Email</label>
+      <input type="text"  class="floatLabel" name="email" placeholder="Email..." #email>
+     
     </div>       
     <div class="controls">
-      <input type="tel" id="phone" class="floatLabel" name="phone">
-      <label for="phone">Phone</label>
+      <input type="tel"  class="floatLabel" name="phone" placeholder="Phone Number..." #phone>
     </div>
       
        
@@ -25,15 +23,22 @@
     
    
       <div class="controls">
-        <input type="date" id="depart" class="floatLabel" name="depart"/>
-        <label for="depart" class="label-date"><i class="fa fa-calendar"></i>Date</label>
+          <input placeholder="Select Your Free Session Date..." class="floatLabel" type="text" onfocus="(this.type='date')"  id="date">
+        <!-- <input type="date"  class="floatLabel" name="date" placeholder="Select Your Free Session Date..." #date/> -->
       </div>      
    
     
       <div class="controls">
-        <input type="button" id="btn" class="floatLabel" name="btn" value="Book Now" (click)="sendEmail()"/>
+        <input type="button" id="skillsbtn" class="floatLabel" name="btn" value="Book Now" (click)="sendEmail(name.value, email.value, phone.value, date.value)"/>
         
           
+    </div>
+    </div>
+
+    <div class="thanks" *ngIf="done">
+
+      <span>Thank-you for booking an appointment with us! We will contact you shortly.</span>
+
     </div>
     </div>
       

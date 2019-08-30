@@ -8,6 +8,12 @@ import { AboutComponentComponent } from './about/about-component.component';
 import { ContactComponentComponent } from './contact/contact-component.component';
 import { BookserviceComponentComponent } from './bookservice/bookservice-component.component';
 import { CoursesComponent } from './courses/courses.component';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faCoffee, fas } from '@fortawesome/free-solid-svg-icons';
+import {} from 'hammerjs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +28,20 @@ import { CoursesComponent } from './courses/courses.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxAudioPlayerModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+   constructor(library: FaIconLibrary) {
+       
+       library.addIconPacks(fas);
+       library.addIcons(faCoffee);
+      }
+
+}

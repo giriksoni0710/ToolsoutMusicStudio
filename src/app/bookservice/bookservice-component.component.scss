@@ -339,7 +339,7 @@ header, form {
 
 h2.heading {
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 300;
   text-align: left;
   color: #506982;
@@ -365,8 +365,7 @@ h2.heading {
   border: 1px solid #c6c6c6;
   width: 100%;
   margin-bottom: 18px;
-  color: #888;
-  font-family: 'Lato', 'sans-serif';
+  
   font-size: 16px;
   font-weight: 300;
   -moz-border-radius: 2px;
@@ -382,8 +381,8 @@ h2.heading {
 .controls input[type="email"]:hover,
 .controls input[type="number"]:focus,
 .controls input[type="number"]:hover,
-.controls input[type="date"], input[type="button"]:focus,
-.controls input[type="date"], input[type="button"]:hover,
+.controls input[type="date"]:focus, input[type="button"]:focus,
+.controls input[type="date"]:hover, input[type="button"]:hover,
 .controls input[type="tel"]:focus,
 .controls input[type="tel"]:hover,
 .controls textarea:focus,
@@ -400,8 +399,8 @@ h2.heading {
 .controls input[type="email"]:hover + label,
 .controls input[type="number"]:focus + label,
 .controls input[type="number"]:hover + label,
-.controls input[type="date"], input[type="button"]:focus + label,
-.controls input[type="date"], input[type="button"]:hover + label,
+.controls input[type="date"]:focus + label, input[type="button"]:focus + label,
+.controls input[type="date"]:hover + label, input[type="button"]:hover + label,
 .controls input[type="tel"]:focus + label,
 .controls input[type="tel"]:hover + label,
 .controls textarea:focus + label,
@@ -420,8 +419,6 @@ h2.heading {
   color: #999;
 }
 .controls select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   cursor: pointer;
 }
 .controls label {
@@ -525,4 +522,17 @@ input[type="date"]{
 min-width: 388.40px;
 
 
+}
+
+.thanks {
+  text-align: center;
+
+
+    span {
+
+      color: white;
+      background-color: black;
+      font-weight: bolder;
+
+    }
 }

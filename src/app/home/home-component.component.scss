@@ -101,7 +101,7 @@ max-width: 312px;
   #bannertxt {
       z-index: 6;
     position: absolute;
-    width: 91.3%;
+    width: 100%;
     margin-top: -28rem;
     text-align: center;
     padding: 1rem;
@@ -112,7 +112,8 @@ max-width: 312px;
     h4{
         color: white;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
     }
 
     
@@ -121,7 +122,7 @@ max-width: 312px;
 
     .aboutSection {
 
-        padding: 1rem;
+        
     
         h2 {
           text-align: center;
@@ -135,6 +136,7 @@ max-width: 312px;
             margin-top: 2rem;
             z-index: 5;
             margin-right: 1rem;
+            width: 100%;
 
             
               h2 {
@@ -147,16 +149,18 @@ max-width: 312px;
 
         .description {
 
-            background-color: antiquewhite;
-            padding: 1rem;
+            background-color: black;
+            
             margin-top: 3rem;
+            margin-bottom: 2rem;
             position: absolute;
             z-index: 6;
-            margin-right: 1rem;
-
+            
             h5 {
+              color: white;
+              font-weight: bold;
               padding: 2rem;
-              font-size: 1rem;
+              font-size: 1.3rem;
     font-style: oblique;
             }
 
@@ -311,12 +315,8 @@ max-width: 312px;
       }
       
 
-      .ourstudio {
-        
-          margin-top: 13rem;
-          font-size: 3rem;
-        
-      }
+      
+
      
       @media only screen and  (min-width: 700px) {
 
@@ -329,17 +329,25 @@ max-width: 312px;
         
         #bannertxt {
 
-          width: 95.3%;
+          width: 100%;
 
         }
+        
+      .playerHeading h2, .ourstudio {
+
+        text-transform: capitalize;
+
+        font-size: 2rem;
+        
+    }
       }
 
 
-      @media only screen and  (min-width: 900px) {
+      @media only Screen and  (min-width: 900px) {
 
         #bannertxt {
 
-            width: 96.5%;
+            width: 100%;
 
         }
         
@@ -348,6 +356,12 @@ max-width: 312px;
           margin-top: 19rem;
 
         }
+        
+      .playerHeading h2, .ourstudio {
+
+
+        font-size: 3rem;
+    }
 
       }
 
@@ -355,7 +369,7 @@ max-width: 312px;
 
         #bannertxt {
 
-            width: 97.8%;
+            width: 100%;
 
         }
 
@@ -380,3 +394,17 @@ max-width: 312px;
         90% { transform: translate(1px, 2px) rotate(0deg); }
         100% { transform: translate(1px, -2px) rotate(-1deg); }
       }
+
+      .playerHeading h2, .ourstudio {
+
+
+        font-size: 1.3rem;
+        background-color: black;
+        color: white;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .ourstudio {
+      margin: 12rem 0 0 0;
+    }

@@ -96,9 +96,7 @@ margin-top: -30vh;
   #bannertxt {
       z-index: 6;
     position: absolute;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 85%;
+    width: 100%;
     margin-top: -28rem;
     text-align: center;
     padding: 1rem;
@@ -150,7 +148,7 @@ margin-top: -30vh;
   position: relative;
     margin-top: -15rem;
     color: white;
-    font-size: 3rem;
+    font-size: 1.3rem;
     background-color: black;
 }
 
@@ -185,9 +183,13 @@ margin-top: -30vh;
 .projectsarea h1 {
 
   z-index: 5;
-  background: darkslategray;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  background-color: black;
   color: white;
-  
+  padding: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 
@@ -199,11 +201,20 @@ margin-top: -30vh;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
+.projectsarea h1 {
+
+  font-size: 2rem;
+}
+
 }
 
 @media Screen and (min-width: 1000px){
 .cards {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 26px;
+}
+.projectsarea h1 {
+
+  font-size: 3rem;
 }
 }
