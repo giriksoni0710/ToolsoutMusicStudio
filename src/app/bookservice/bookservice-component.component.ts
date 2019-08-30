@@ -32,7 +32,7 @@ export class BookserviceComponentComponent implements OnInit {
     console.log(phone);
     console.log(date);
     
-    const url = 'http://localhost:3000/abc';
+    const url = 'http://toolsout.giriksoni.wmdd.ca/abc';
 
     this.http.post(url,{name: name,email: email, phone: phone, data: date}).toPromise().then(data =>{
 

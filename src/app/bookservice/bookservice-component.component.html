@@ -5,12 +5,14 @@
    
 
 <div class="form-group">
+
     <h2 class="heading">Book a Free Session with us!!!</h2>
+  
     <div class="controls">
-      <input type="text" class="floatLabel" name="name" placeholder="Name..." #name>
+      <input type="text" required class="floatLabel" name="name" placeholder="Name..." #name>
     </div>
     <div class="controls">
-      <input type="text"  class="floatLabel" name="email" placeholder="Email..." #email>
+      <input type="text"  required class="floatLabel" name="email" placeholder="Email..." #email>
      
     </div>       
     <div class="controls">
@@ -23,7 +25,7 @@
     
    
       <div class="controls">
-          <input placeholder="Select Your Free Session Date..." class="floatLabel" type="text" onfocus="(this.type='date')"  id="date">
+          <input placeholder="Select Your Free Session Date..." class="floatLabel" type="text" onfocus="(this.type='date')"  #date/>
         <!-- <input type="date"  class="floatLabel" name="date" placeholder="Select Your Free Session Date..." #date/> -->
       </div>      
    
@@ -33,6 +35,8 @@
         
           
     </div>
+
+    
     </div>
 
     <div class="thanks" *ngIf="done">
